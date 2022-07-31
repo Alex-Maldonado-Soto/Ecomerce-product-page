@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500&display=swap");
+
+:root {
+  --Orange: hsl(26, 100%, 55%);
+  --PaleOrange: hsl(25, 100%, 94%);
+  --Very-vark-blue: hsl(220, 13%, 13%);
+  --Dark-grayish-blue: hsl(219, 9%, 45%);
+  --Grayish-blue: hsl(220, 14%, 75%);
+  --Light-grayish-blue: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+  --Black/*(with 75% opacity for lightbox background)*/: hsl(0, 0%, 0%);
+}
+
+p {
+  font-size: 16px;
+}
+
+
+#div {
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    position: fixed;
+    background-blend-mode: darken;
+    pointer-events: none;
+    transition-duration: .5s;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 24px;
+}
+
+.nav--menu img:first-child{
+    margin-right: 25px;
+}
+
+.nav--profile img:first-child{
+    width: 25px;
+    margin-right: 25px;
+}
+
+.nav--profile img:nth-child(2){
+    width: 29px;
+}
+.nav img:first-child{
+    display: block;
+    margin-bottom: 50px;
+}
+
+.nav {
+    top: 0;
+    left: -240px;
+    position: fixed;
+    padding: 24px;
+    z-index: 1000;
+    width: 238px;
+    height: 100vh;
+    background-color: var(--White);
+}
+
+.navbar--items{
+    list-style: none;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.navbar--items li {
+    margin: 24px 0;
+}
