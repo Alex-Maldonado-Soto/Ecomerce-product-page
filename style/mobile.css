@@ -23,59 +23,84 @@ p {
   font-size: 16px;
 }
 
-
 #div {
-    background-color: transparent;
-    width: 100vw;
-    height: 100vh;
-    z-index: 100;
-    position: fixed;
-    background-blend-mode: darken;
-    pointer-events: none;
-    transition-duration: .5s;
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  position: fixed;
+  background-blend-mode: darken;
+  pointer-events: none;
+  transition-duration: 0.5s;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 9px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 24px;
 }
 
-.nav--menu img:first-child{
-    margin-right: 25px;
+.nav--menu img:first-child {
+  margin-right: 25px;
 }
 
-.nav--profile img:first-child{
-    width: 25px;
-    margin-right: 25px;
+.nav--profile img:first-child {
+  width: 25px;
+  margin-right: 25px;
 }
 
-.nav--profile img:nth-child(2){
-    width: 29px;
+.nav--profile img:nth-child(2) {
+  width: 29px;
 }
-.nav img:first-child{
-    display: block;
-    margin-bottom: 50px;
+.nav img:first-child {
+  display: block;
+  margin-bottom: 50px;
 }
 
 .nav {
-    top: 0;
-    left: -240px;
-    position: fixed;
-    padding: 24px;
-    z-index: 1000;
-    width: 238px;
-    height: 100vh;
-    background-color: var(--White);
+  top: 0;
+  left: -240px;
+  position: fixed;
+  padding: 24px;
+  z-index: 1000;
+  width: 238px;
+  height: 100vh;
+  background-color: var(--White);
 }
 
-.navbar--items{
-    list-style: none;
-    font-weight: bold;
-    font-size: 3rem;
+.navbar--items {
+  list-style: none;
+  font-weight: bold;
+  font-size: 3rem;
 }
 
 .navbar--items li {
-    margin: 24px 0;
+  margin: 24px 0;
+}
+
+.slider {
+  height: 240px;
+}
+
+.slider > img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.slider--arrows {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: 240px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.slider--arrows img {
+  background-color: var(--White);
+  border-radius: 100%;
+  padding: 12px;
 }
