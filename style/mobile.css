@@ -222,6 +222,14 @@ h2 {
   padding: 12px;
 }
 
+.slider__opcions {
+  display: none;
+}
+
+.slider__popap {
+  display: none;
+}
+
 .product-section--text {
   padding: 21px;
 }

@@ -1,4 +1,4 @@
-let numberSliderImage = -1;
+var numberSliderImage = 0;
 let sliderImage = [
   "images/image-product-1.jpg",
   "images/image-product-2.jpg",
@@ -12,6 +12,8 @@ function next() {
     numberSliderImage = 0;
   }
   document.getElementById("slider--img").src = sliderImage[numberSliderImage];
+  document.getElementById("slider--img-pop").src = sliderImage[numberSliderImage];
+
 }
 
 function previous() {
@@ -20,4 +22,21 @@ function previous() {
     numberSliderImage = 3;
   }
   document.getElementById("slider--img").src = sliderImage[numberSliderImage];
+  document.getElementById("slider--img-pop").src = sliderImage[numberSliderImage];
 }
+
+
+setInterval(function () {
+
+  if (numberSliderImage == sliderImage.length) {
+    numberSliderImage = 0;
+  }
+
+  if (numberSliderImage <= -1) {
+    numberSliderImage = 3;
+  }
+
+
+  document.getElementById("slider--img").src = sliderImage[numberSliderImage];
+  document.getElementById("slider--img-pop").src = sliderImage[numberSliderImage];
+}, 1);

@@ -29,6 +29,11 @@
         <div class="nav--menu">
           <img src="images/icon-menu.svg" alt="Abrir menu" onclick="navbar()" />
           <img src="images/logo.svg" alt="Pagina Inicio" />
+          <a href="#">Collections</a>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
         </div>
         <div class="nav--profile">
           <picture>
@@ -104,7 +109,39 @@
           id="slider--img"
           src="images/image-product-1.jpg"
           alt="Zapatos Fall Limited Edition Sneakers"
+          onclick="navbar()"
         />
+
+        <ul class="slider__opcions">
+          <li>
+            <img
+              src="images/image-product-1-thumbnail.jpg"
+              alt=""
+              onclick="numberSliderImage = 0"
+            />
+          </li>
+          <li>
+            <img
+              src="images/image-product-2-thumbnail.jpg"
+              alt=""
+              onclick="numberSliderImage = 1"
+            />
+          </li>
+          <li>
+            <img
+              src="images/image-product-3-thumbnail.jpg"
+              alt=""
+              onclick="numberSliderImage = 2"
+            />
+          </li>
+          <li>
+            <img
+              src="images/image-product-4-thumbnail.jpg"
+              alt=""
+              onclick="numberSliderImage = 3"
+            />
+          </li>
+        </ul>
       </section>
       <section class="product-section--text">
         <h4>SNAKER COMPANY</h4>
@@ -125,7 +162,7 @@
             <h5>$250.00</h5>
           </div>
         </section>
-        <section>
+        <section class="add-product-cart">
           <div class="add-products">
             <img
               src="images/icon-minus.svg"
@@ -152,6 +189,61 @@
         </section>
       </section>
     </main>
+
+
+    <section class="slider__popap" id="slider__popap">
+      <div class="slider__pop--arrows">
+        <img
+          src="images/icon-previous.svg"
+          alt="pasar a la imagen anterior"
+          onclick="previous()"
+        />
+        <img
+          src="images/icon-next.svg"
+          alt="pasar a la imagen siguiente"
+          onclick="next()"
+        />
+      </div>
+      <img
+        id="slider--img-pop"
+        src="images/image-product-1.jpg"
+        alt="Zapatos Fall Limited Edition Sneakers"
+      />
+
+      <img src="images/icon-close.svg" alt="Cerrar slider de zapatos" id="slider--img-popap" onclick="navbarReverse()">
+
+      <ul class="slider__opcions">
+        <li>
+          <img
+            src="images/image-product-1-thumbnail.jpg"
+            alt=""
+            onclick="numberSliderImage = 0"
+          />
+        </li>
+        <li>
+          <img
+            src="images/image-product-2-thumbnail.jpg"
+            alt=""
+            onclick="numberSliderImage = 1"
+          />
+        </li>
+        <li>
+          <img
+            src="images/image-product-3-thumbnail.jpg"
+            alt=""
+            onclick="numberSliderImage = 2"
+          />
+        </li>
+        <li>
+          <img
+            src="images/image-product-4-thumbnail.jpg"
+            alt=""
+            onclick="numberSliderImage = 3"
+          />
+        </li>
+      </ul>
+    </section>
+
 
     <!--Script del gsap-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
